@@ -1,0 +1,373 @@
+.featured-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #0003;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.featured-container .main-post {
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-right: 5px solid #fff;
+}
+
+.featured-container .main-post .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+          box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+}
+
+.featured-container .main-post .feature-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.featured-container .main-post .postData {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.featured-container .main-post .postData .categoryCloud {
+  font-size: 10px;
+  padding: 3px 5px;
+  background-color: #04aa6d;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ececec;
+  cursor: auto;
+}
+
+.featured-container .main-post .postData .description {
+  position: absolute;
+  bottom: 0;
+  padding: 0 10px;
+}
+
+.featured-container .main-post .postData .description .postTitle {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.featured-container .main-post .postData .description .postTitle:hover {
+  color: #00f59b;
+}
+
+.featured-container .main-post .postData .description .meta-data .author,
+.featured-container .main-post .postData .description .meta-data .date {
+  font-size: 12px;
+  text-decoration: none;
+  color: #dbdbdb;
+  margin-right: 10px;
+}
+
+.featured-container .main-post .postData .description .meta-data .author:hover {
+  color: #00f59b;
+}
+
+.featured-container .side-posts {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.featured-container .side-posts .top-post {
+  height: calc(400px / 2);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-container .side-posts .top-post .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+          box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+}
+
+.featured-container .side-posts .top-post .feature-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.featured-container .side-posts .top-post .postData {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.featured-container .side-posts .top-post .postData .categoryCloud {
+  font-size: 10px;
+  padding: 3px 5px;
+  background-color: #04aa6d;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ececec;
+  cursor: auto;
+}
+
+.featured-container .side-posts .top-post .postData .description {
+  position: absolute;
+  bottom: 0;
+  padding: 0 10px;
+}
+
+.featured-container .side-posts .top-post .postData .description .postTitle {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.featured-container .side-posts .top-post .postData .description .postTitle:hover {
+  color: #00f59b;
+}
+
+.featured-container .side-posts .top-post .postData .description .meta-data .author,
+.featured-container .side-posts .top-post .postData .description .meta-data .date {
+  font-size: 11px;
+  text-decoration: none;
+  color: #dbdbdb;
+  margin-right: 10px;
+}
+
+.featured-container .side-posts .top-post .postData .description .meta-data .author:hover {
+  color: #00f59b;
+}
+
+.featured-container .side-posts .bottom-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(400px / 2);
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 {
+  border-right: 5px solid #fff;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1,
+.featured-container .side-posts .bottom-post .bottomPost2 {
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+  border-top: 5px solid #fff;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .overlay,
+.featured-container .side-posts .bottom-post .bottomPost2 .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+          box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .feature-image,
+.featured-container .side-posts .bottom-post .bottomPost2 .feature-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .postData,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .postData .categoryCloud,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData .categoryCloud {
+  font-size: 10px;
+  padding: 3px 5px;
+  background-color: #04aa6d;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ececec;
+  cursor: auto;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .postData .description,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData .description {
+  position: absolute;
+  bottom: 0;
+  padding: 0 10px;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .postData .description .postTitle,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData .description .postTitle {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .postData .description .postTitle:hover,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData .description .postTitle:hover {
+  color: #00f59b;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .postData .description .meta-data .author,
+.featured-container .side-posts .bottom-post .bottomPost1 .postData .description .meta-data .date,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData .description .meta-data .author,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData .description .meta-data .date {
+  font-size: 11px;
+  text-decoration: none;
+  color: #dbdbdb;
+  margin-right: 10px;
+}
+
+.featured-container .side-posts .bottom-post .bottomPost1 .postData .description .meta-data .author:hover,
+.featured-container .side-posts .bottom-post .bottomPost2 .postData .description .meta-data .author:hover {
+  color: #00f59b;
+}
+
+@media (max-width: 1000px) {
+  .featured-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featured-container .main-post {
+    width: 100%;
+    height: 300px;
+    border-right: none;
+  }
+  .featured-container .side-posts {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .featured-container .side-posts .top-post {
+    height: 300px;
+  }
+  .featured-container .side-posts .bottom-post .bottomPost1,
+  .featured-container .side-posts .bottom-post .bottomPost2 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featured-container .main-post {
+    width: 100%;
+    height: 200px;
+  }
+  .featured-container .side-posts {
+    width: 100%;
+  }
+  .featured-container .side-posts .top-post {
+    height: 200px;
+  }
+  .featured-container .side-posts .top-post .postData .description .postTitle {
+    font-size: 18px;
+  }
+  .featured-container .side-posts .top-post .postData .description .meta-data .date,
+  .featured-container .side-posts .top-post .postData .description .meta-data .author {
+    font-size: 12px;
+  }
+  .featured-container .side-posts .bottom-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .featured-container .side-posts .bottom-post .bottomPost1,
+  .featured-container .side-posts .bottom-post .bottomPost2 {
+    width: 100%;
+    height: 200px;
+    border-right: none;
+  }
+  .featured-container .side-posts .bottom-post .bottomPost1 .postData .description .postTitle,
+  .featured-container .side-posts .bottom-post .bottomPost2 .postData .description .postTitle {
+    font-size: 18px;
+  }
+  .featured-container .side-posts .bottom-post .bottomPost1 .postData .description .meta-data .date,
+  .featured-container .side-posts .bottom-post .bottomPost1 .postData .description .meta-data .author,
+  .featured-container .side-posts .bottom-post .bottomPost2 .postData .description .meta-data .date,
+  .featured-container .side-posts .bottom-post .bottomPost2 .postData .description .meta-data .author {
+    font-size: 12px;
+  }
+}

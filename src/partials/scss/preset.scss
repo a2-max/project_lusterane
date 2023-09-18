@@ -1,0 +1,29 @@
+$pcolor: #04aa6d;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ececec;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // max-width: 1200px;
+    // border: 1px solid #000;
+}
+.app{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}

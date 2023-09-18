@@ -1,0 +1,20 @@
+Backend ->
+
+-> add post to db
+-> signup and login user
+->deny access to dashboard without login
+     manage file upload as like wordpress i.e
+   	At first i will create a upload file page and
+   	select image from there
+
+Frontend ->
+
+-> signup and login page
+-> plagiarism checker and word count(disable submit btn until criteria meet)
+-> Upload file page
+-> Add Category Page(for super admin)
+
+
+Sahakari PAN no. 600469201
+
+didi passport follow up -> dd0f7d68-3b9d-483e-9cae-d98f9ce06fbb

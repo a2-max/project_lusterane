@@ -1,0 +1,191 @@
+.main-body-posts-wrapper {
+  width: 100%;
+}
+
+.main-body-posts-wrapper .post-wrapper .posts-wrap {
+  width: 100%;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.main-body-posts-wrapper .post-wrapper .posts-wrap .posts .single-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-body-posts-wrapper .post-wrapper .posts-wrap .posts .single-post .featureImage {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  border: 1px solid #0003;
+}
+
+.main-body-posts-wrapper .post-wrapper .posts-wrap .posts .single-post .featureImage .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-body-posts-wrapper .post-wrapper .posts-wrap .posts .single-post .featureImage:hover .image {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-body-posts-wrapper .post-wrapper .posts-wrap .posts .single-post .postTitle {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-body-posts-wrapper .post-wrapper .posts-wrap .posts .single-post .postTitle:hover {
+  color: #04aa6d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 {
+  width: 100%;
+  display: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px auto;
+      grid-template-columns: 250px auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .posts {
+  width: 100%;
+  height: auto;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .posts .single-post {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .posts .single-post .featureImage {
+  width: 180px;
+  height: 100px;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .posts .single-post .postTitle {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .firstPostGrid {
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/ 4;
+  margin-left: 0;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .firstPostGrid .single-post {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .firstPostGrid .single-post .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+          box-shadow: 0px -147px 400px -96px rgba(0, 0, 0, 0.664) inset;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .firstPostGrid .single-post .featureImage {
+  height: 100%;
+  width: 100%;
+}
+
+.main-body-posts-wrapper .post-wrapper .style1 .firstPostGrid .single-post .postTitle {
+  position: absolute;
+  bottom: 5px;
+  padding: 0 5px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 0;
+}
+
+@media (max-width: 850px) {
+  .main-body-posts-wrapper .post-wrapper .style1 {
+    width: 100%;
+    overflow: hidden;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    gap: 10px;
+  }
+  .main-body-posts-wrapper .post-wrapper .style1 .posts {
+    margin-left: 0;
+    width: 100%;
+  }
+  .main-body-posts-wrapper .post-wrapper .style1 .posts .single-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-body-posts-wrapper .post-wrapper .style1 .posts .single-post .featureImage {
+    width: 100%;
+  }
+  .main-body-posts-wrapper .post-wrapper .style1 .firstPostGrid {
+    grid-column: 1/ -1;
+    height: 200px;
+    width: 100%;
+  }
+  .main-body-posts-wrapper .post-wrapper .style1 .firstPostGrid .single-post {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-body-posts-wrapper .post-wrapper .style1 {
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .main-body-posts-wrapper .post-wrapper .style1 .posts .single-post {
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-body-posts-wrapper .post-wrapper .posts-wrap {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}

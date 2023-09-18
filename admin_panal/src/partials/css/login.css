@@ -1,0 +1,435 @@
+.login-wrapper {
+  margin: 30px 0;
+}
+.login-wrapper .login-insider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-wrapper .login-insider .card {
+  box-shadow: 0px 4px 19px -6px rgba(0, 0, 0, 0.2666666667);
+  width: 90%;
+  max-width: 1180px;
+  height: 580px;
+  border-radius: 30px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.login-wrapper .login-insider .card .details {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  background: url("../images/loginbg.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-clip-path: ellipse(72% 80% at 27% 25%);
+          clip-path: ellipse(72% 80% at 27% 25%);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.login-wrapper .login-insider .card .details .overlayn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(4, 170, 109, 0.6509803922);
+}
+.login-wrapper .login-insider .card .details .step,
+.login-wrapper .login-insider .card .details .cat {
+  z-index: 999;
+}
+.login-wrapper .login-insider .card .details .title {
+  padding: 80px 10px 40px 30px;
+  color: #fff;
+  z-index: 999;
+  font-size: 30px;
+  line-height: 40px;
+  position: absolute;
+  text-transform: uppercase;
+}
+.login-wrapper .login-insider .card .details .steps {
+  position: absolute;
+  z-index: 999;
+  top: 160px;
+  padding-left: 20px;
+}
+.login-wrapper .login-insider .card .details .steps .step {
+  display: flex;
+  margin-top: 20px;
+  z-index: 9999;
+  color: #fff;
+}
+.login-wrapper .login-insider .card .details .steps .step .count {
+  background-color: rgba(255, 255, 255, 0.0666666667);
+  border: 1px solid rgba(255, 255, 255, 0.0666666667);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+}
+.login-wrapper .login-insider .card .details .cat {
+  width: 120px;
+  margin-left: 80px;
+  position: absolute;
+  bottom: 0;
+}
+.login-wrapper .login-insider .card .formarea {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.login-wrapper .login-insider .card .formarea .content {
+  width: 400px;
+}
+.login-wrapper .login-insider .card .formarea .content .title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.login-wrapper .login-insider .card .formarea .content .warn {
+  margin-top: 30px;
+  font-size: 12px;
+}
+.login-wrapper .login-insider .card .formarea .content form {
+  width: 100%;
+}
+.login-wrapper .login-insider .card .formarea .content form .label {
+  font-size: 14px;
+  color: #2b2b2b;
+}
+.login-wrapper .login-insider .card .formarea .content form .inputarea {
+  margin-top: 5px;
+  display: flex;
+  position: relative;
+}
+.login-wrapper .login-insider .card .formarea .content form .inputarea .input-icon {
+  position: absolute;
+  font-size: 22px;
+  align-self: center;
+  margin-left: 5px;
+  color: #000;
+}
+.login-wrapper .login-insider .card .formarea .content form .inputarea input {
+  padding: 10px 15px;
+  padding-left: 40px;
+  width: 80%;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+}
+.login-wrapper .login-insider .card .formarea .content form .inputarea input::-moz-placeholder {
+  color: #bbb;
+}
+.login-wrapper .login-insider .card .formarea .content form .inputarea input:-ms-input-placeholder {
+  color: #bbb;
+}
+.login-wrapper .login-insider .card .formarea .content form .inputarea input::placeholder {
+  color: #bbb;
+}
+.login-wrapper .login-insider .card .formarea .content form .inputarea input:focus {
+  border: 1px solid #3c69fd;
+  box-shadow: 0px 0px 4px #3c69fd;
+}
+.login-wrapper .login-insider .card .formarea .content form .select-inptArea {
+  width: 100%;
+}
+.login-wrapper .login-insider .card .formarea .content form .select-inptArea .select-country {
+  width: 80%;
+}
+.login-wrapper .login-insider .card .formarea .content form button {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(4, 170, 109, 0.6509803922);
+  font-size: 18px;
+  color: #000000;
+}
+.login-wrapper .login-insider .card .formarea .content form button:hover {
+  background-color: rgba(4, 170, 109, 0.7725490196);
+  transition: all 0.3s ease;
+}
+.login-wrapper .login-insider .card .formarea .content .social-network {
+  width: 80%;
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.login-wrapper .login-insider .card .formarea .content .social-icons {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.login-wrapper .login-insider .card .formarea .content .social-icons .a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+}
+.login-wrapper .login-insider .card .formarea .content .social-icons .a .icon {
+  font-size: 20px;
+  color: #000;
+  padding: 5px;
+}
+.login-wrapper .login-insider .card .formarea .content .social-icons .a .icon:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 960px) {
+  .login-wrapper .login-insider .card {
+    width: 70%;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .login-wrapper .login-insider .card .details,
+.login-wrapper .login-insider .card .formarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .login-wrapper .login-insider .card .details {
+    border-radius: 0;
+    -webkit-clip-path: none;
+            clip-path: none;
+    height: auto;
+  }
+  .login-wrapper .login-insider .card .details .title,
+.login-wrapper .login-insider .card .details .steps,
+.login-wrapper .login-insider .card .details .cat {
+    position: relative;
+  }
+  .login-wrapper .login-insider .card .details .steps {
+    top: 0;
+  }
+  .login-wrapper .login-insider .card .formarea .title {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .login-wrapper .login-insider .card {
+    margin-top: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    flex-direction: column-reverse;
+  }
+  .login-wrapper .login-insider .card .details {
+    background: #eee;
+  }
+  .login-wrapper .login-insider .card .details .overlayn {
+    display: none;
+  }
+  .login-wrapper .login-insider .card .details .title {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 0;
+  }
+  .login-wrapper .login-insider .card .details .steps {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .login-wrapper .login-insider .card .details .steps .step {
+    color: #7a7a7a;
+  }
+  .login-wrapper .login-insider .card .details .steps .step .count {
+    margin-left: 0;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #000;
+    font-weight: 700;
+    padding: 0 5px;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+  }
+  .login-wrapper .login-insider .card .details .cat {
+    margin-top: 10px;
+  }
+  .login-wrapper .login-insider .card .details,
+.login-wrapper .login-insider .card .formarea {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+  .login-wrapper .login-insider .card .details .content,
+.login-wrapper .login-insider .card .formarea .content {
+    width: 100%;
+  }
+  .login-wrapper .login-insider .card .details .content .title,
+.login-wrapper .login-insider .card .formarea .content .title {
+    margin-top: 30px;
+  }
+  .login-wrapper .login-insider .card .details .content form .inputarea,
+.login-wrapper .login-insider .card .formarea .content form .inputarea {
+    width: 100%;
+  }
+  .login-wrapper .login-insider .card .details .content form .inputarea input,
+.login-wrapper .login-insider .card .formarea .content form .inputarea input {
+    width: 100%;
+  }
+  .login-wrapper .login-insider .card .details .content form .select-inptArea .select-country,
+.login-wrapper .login-insider .card .formarea .content form .select-inptArea .select-country {
+    width: 100%;
+  }
+  .login-wrapper .login-insider .card .details .content form button,
+.login-wrapper .login-insider .card .formarea .content form button {
+    width: 100%;
+  }
+  .login-wrapper .login-insider .card .details .content .social-network,
+.login-wrapper .login-insider .card .details .content .social-icons,
+.login-wrapper .login-insider .card .formarea .content .social-network,
+.login-wrapper .login-insider .card .formarea .content .social-icons {
+    width: 100%;
+  }
+}
+.login-wrapper .login-insider .login-card {
+  position: relative;
+  overflow-y: visible;
+  z-index: 100;
+}
+.login-wrapper .login-insider .login-card .catarea {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.login-wrapper .login-insider .login-card .catarea img {
+  width: 100px;
+}
+.login-wrapper .login-insider .login-card .catarea .paw {
+  margin-top: -5px;
+}
+.login-wrapper .login-insider .login-card .catarea .default {
+  margin-top: -70px;
+  display: none;
+}
+.login-wrapper .login-insider .login-card .catarea .email {
+  margin-top: -80px;
+  z-index: -99;
+  -webkit-animation: email 0.3s ease-in-out linear;
+          animation: email 0.3s ease-in-out linear;
+}
+@-webkit-keyframes email {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -80px;
+  }
+}
+@keyframes email {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -80px;
+  }
+}
+.login-wrapper .login-insider .login-card .catarea .email-active {
+  display: none;
+}
+.login-wrapper .login-insider .login-card .catarea .password {
+  margin-top: -90px;
+}
+.login-wrapper .login-insider .login-card .catarea .password-active {
+  display: none;
+}
+.login-wrapper .login-insider .login-card .blur-catarea .default {
+  display: block;
+}
+.login-wrapper .login-insider .login-card .blur-catarea .email {
+  display: none;
+}
+.login-wrapper .login-insider .login-card .blur-catarea .password {
+  display: none;
+}
+.login-wrapper .login-insider .login-card .details .tagline {
+  position: absolute;
+  z-index: 999;
+  top: 170px;
+  margin-left: 30px;
+  color: #fff;
+  word-spacing: 3px;
+  font-size: 16px;
+}
+.login-wrapper .login-insider .login-card .details a {
+  position: absolute;
+  top: 220px;
+  margin-left: 30px;
+  z-index: 999;
+  text-decoration: none;
+}
+.login-wrapper .login-insider .login-card .details a button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(4, 170, 109, 0.6509803922);
+  color: #e4e4e4;
+}
+.login-wrapper .login-insider .login-card .details a button:hover {
+  background-color: #04aa6d;
+  transition: all 0.3s ease;
+}
+@media (max-width: 960px) {
+  .login-wrapper .login-insider .login-card {
+    height: auto;
+  }
+  .login-wrapper .login-insider .login-card .details {
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 0;
+  }
+  .login-wrapper .login-insider .login-card .details .title {
+    padding: 20px 5px 10px 10px;
+    position: relative;
+    font-size: 22px;
+  }
+  .login-wrapper .login-insider .login-card .details .tagline {
+    position: relative;
+    z-index: 999;
+    top: 0;
+    margin-left: 10px;
+    padding-right: 10px;
+  }
+  .login-wrapper .login-insider .login-card .details a {
+    position: relative;
+    z-index: 999;
+    top: 0;
+    margin-left: 10px;
+  }
+  .login-wrapper .login-insider .login-card .details a button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .login-wrapper .login-insider .login-card .details .tagline {
+    color: #666;
+  }
+}
+@media (max-width: 600px) {
+  .login-wrapper .main-body {
+    margin-bottom: 0;
+  }
+}

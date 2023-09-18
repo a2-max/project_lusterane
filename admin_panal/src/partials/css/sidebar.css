@@ -1,0 +1,208 @@
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 230px;
+  background: #1b1b1b;
+  padding: 6px 14px;
+  overflow-y: auto;
+  padding-bottom: 60px;
+  transition: all 0.5s ease-in-out;
+  z-index: 9999999999999;
+}
+.sidebar .header {
+  display: flex;
+}
+.sidebar .header .logo {
+  width: 100%;
+}
+.sidebar .header .logo .logo-img {
+  width: 30px;
+  background: #04aa6d;
+  border-radius: 5px;
+}
+.sidebar .header .logo .logo-txt {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.sidebar .menu {
+  margin-top: 30px;
+  padding-left: 0;
+  width: 100%;
+}
+.sidebar .menu li {
+  list-style: none;
+  margin: 25px 0;
+  width: 100%;
+}
+.sidebar .menu li .link {
+  text-decoration: none;
+  color: #cacaca;
+  border-radius: 5px;
+  width: 100%;
+}
+.sidebar .menu li .link .icon {
+  margin-right: 10px;
+}
+.sidebar .menu li .link:hover {
+  color: #04aa6d;
+}
+.sidebar .menu .dropdown-menu {
+  background-color: #2e2e2e;
+}
+.sidebar .menu .dropdown-menu li {
+  margin: 0;
+}
+.sidebar .menu .dropdown-menu li .dropdown-item {
+  color: #cacaca;
+}
+.sidebar .menu .dropdown-menu li .dropdown-item:hover {
+  background-color: #04aa6d;
+  color: #fff;
+}
+.sidebar .userBox {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 230px;
+  height: 60px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  background-color: #272727;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar .userBox .profile .image {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.sidebar .userBox .user-info {
+  margin-left: 5px;
+  max-width: 120px;
+  overflow: hidden;
+}
+.sidebar .userBox .user-info .name {
+  font-size: 14px;
+  color: #fff;
+}
+.sidebar .userBox .user-info .batch {
+  font-size: 12px;
+  color: #b4b4b4;
+}
+.sidebar .userBox .logout {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+}
+.sidebar .userBox .logout:hover {
+  color: #04aa6d;
+  transition: 0.3s all ease-in-out;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 230px;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.top-bar .hamburger {
+  z-index: 100000000000000030000000;
+}
+.top-bar .hamburger .line {
+  height: 3px;
+  width: 30px;
+  margin: 5px;
+  background-color: #000;
+}
+
+@media (max-width: 900px) {
+  .top-bar {
+    display: flex;
+    left: 0;
+  }
+  .top-bar .hamburger {
+    background-color: #04aa6d;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transform: translate(-10px, -10px);
+  }
+  .top-bar .hamburger .line {
+    transform: translate(10px, 15px);
+  }
+  .top-bar .hamCross {
+    margin: 10px 0 0 10px;
+    background-color: transparent;
+    transform: none;
+    height: auto;
+    width: auto;
+    transform: none;
+    border-radius: 0;
+  }
+  .top-bar .hamCross .line1 {
+    transform: rotate(45deg) translateY(10px) translateX(-5px);
+    transition: all 0.5s ease;
+    background-color: #fff;
+  }
+  .top-bar .hamCross .line2 {
+    display: none;
+    transition: all 0.5s ease;
+  }
+  .top-bar .hamCross .line3 {
+    transform: rotate(-45deg) translateY(-12px) translateX(-5px);
+    transition: all 0.5s ease;
+    background-color: #fff;
+  }
+  .top-bar-res {
+    left: 229px;
+  }
+  .top-bar-active {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6666666667);
+    z-index: 99999999999999990000000000000000;
+  }
+  .sidebar,
+.sidebar .userBox {
+    left: -230px;
+  }
+  .activeSidebar {
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .sidebar .userBox-res {
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}

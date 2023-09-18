@@ -1,0 +1,96 @@
+$pcolor: #04aa6d;
+$footerText: #979797;
+
+.footer-max-width{
+    width: 100%;
+    background-color: #383838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .footer-wrapper{
+        width: 100%;
+        max-width: 1200px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        // overflow: hidden;
+    
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+        .column1{
+            .logo-footer{
+                width: 150px;
+                background-color: #fff;
+                // margin-bottom: 5px;
+            }
+            .BrandName{
+                color: $pcolor;
+                font-size: 30px;
+                letter-spacing: 2px;
+                font-family: 'Roboto', sans-serif;
+            }
+            .email{
+                text-decoration: none;
+                color: $footerText;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                margin-top: 10px;
+    
+                .icon{
+                    margin-right: 5px;
+                    color: $pcolor;
+                }
+            }
+            .email:hover{
+                color: $pcolor;
+            }
+    
+            .copyright{
+                font-size: 16px;
+                color: $footerText;
+                margin-top: 10px;
+            }
+        }
+    
+        .column2,
+        .column3{
+            .heading{
+                color: #fff;
+                font-size: 18px;
+                border-left: 2px solid $pcolor;
+                padding-left: 3px;
+                margin-bottom: 5px;
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+    
+                .link{
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: $footerText;
+                }
+                .link:hover{
+                    color: $pcolor;
+                }
+            }
+        }
+    }
+    
+    // Media Queries
+    
+    @media (max-width: 650px) {
+        .footer-wrapper{
+            grid-template-columns: auto;
+    
+            .column{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

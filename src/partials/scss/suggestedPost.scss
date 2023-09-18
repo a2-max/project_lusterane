@@ -1,0 +1,100 @@
+$pcolor: #04aa6d;
+
+
+.suggested-post-area{
+    width: 70%;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #0003;
+    padding: 20px;
+
+    .heading{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .divider{
+        width: 100%;
+        height: 2px;
+        background-color: #bebebe;
+        margin: 5px 0 20px 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .divider::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 3px;
+        background-color: $pcolor;
+    }
+
+    .suggested-posts {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        .single-post {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
+            .featureImage {
+                height: 150px;
+                overflow: hidden;
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .featureImage:hover .image {
+                transform: scale(1.02);
+                transition: all.3s ease-in-out;
+            }
+
+            .postTitle {
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 600;
+                color: #000;
+                margin-top: 5px;
+                font-family: 'Roboto', sans-serif;
+
+            }
+
+            .postTitle:hover {
+                color: $pcolor;
+                transition: all.3s ease-in-out;
+            }
+        }
+    }
+}
+
+// Media Queries
+@media (max-width: 800px) {
+    .suggested-post-area{
+        .suggested-posts{
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .suggested-post-area{
+        width: 100%;
+    }
+}
+@media (max-width: 430px) {
+    .suggested-post-area{
+        .suggested-posts{
+            .single-post{
+                .featureImage{
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

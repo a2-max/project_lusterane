@@ -1,0 +1,98 @@
+$pcolor: #04aa6d;
+
+.sidebar{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+
+    .widget-wrapper{
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid #0003;
+        padding: 20px;
+
+        .header{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .divider{
+            width: 100%;
+            height: 2px;
+            background-color: #d3d3d3;
+            overflow: hidden;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .divider::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: $pcolor;
+        }
+
+        // Posts Start
+        .posts{
+            display: flex;
+            flex-direction: column;
+
+            .single-post{
+                width: 100%;
+                display: flex;
+                // flex-wrap: wrap;
+                align-items: center;
+                flex-direction: row;
+                margin-bottom: 15px;
+
+                .featureImage{
+                    width: 40%;
+                    height: 60px;
+                    object-fit: cover;
+                    border: 1px solid #0003;
+                    border-radius: 5px;
+                }
+                .postTitle{
+                    width: 60%;
+                    margin-left: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-top: 0;                    
+                    font-family: 'Roboto', sans-serif;
+                    text-decoration: none;
+                    color: #000;
+                }
+                .postTitle:hover{
+                    color: $pcolor;
+                    transition: all .3s ease-in-out;
+                }
+            }
+            // .single-post:last-child{
+            //     margin-bottom: 0;
+            // }
+        }
+    }
+}
+
+@media(max-width: 700px){    
+    .sidebar{
+        width: 100%;
+        margin-top: 30px;
+
+        .widget-wrapper{
+            .posts{
+                width: 100%;
+                .single-post{
+                    width: 100%;
+                    .featureImage{
+                        width: 150px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

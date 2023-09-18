@@ -1,0 +1,45 @@
+$pcolor: #04aa6d;
+$bodybg: #ececec;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+// #root{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     // max-width: 1200px;
+//     // border: 1px solid #000;
+// }
+
+#root{
+    .app{
+        .dashboard{
+            display: flex;
+            flex-wrap: nowrap;
+            .dashboard-body{
+                margin-left: 230px;
+                width: 100%;
+                max-width: 1200px;
+                padding: 15px;
+                background-color: $bodybg;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .dashboard{
+                .dashboard-body{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

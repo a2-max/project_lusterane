@@ -1,0 +1,105 @@
+.suggested-post-area {
+  width: 70%;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #0003;
+  padding: 20px;
+}
+
+.suggested-post-area .heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.suggested-post-area .divider {
+  width: 100%;
+  height: 2px;
+  background-color: #bebebe;
+  margin: 5px 0 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.suggested-post-area .divider::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #04aa6d;
+}
+
+.suggested-post-area .suggested-posts {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.suggested-post-area .suggested-posts .single-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.suggested-post-area .suggested-posts .single-post .featureImage {
+  height: 150px;
+  overflow: hidden;
+}
+
+.suggested-post-area .suggested-posts .single-post .featureImage .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.suggested-post-area .suggested-posts .single-post .featureImage:hover .image {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.suggested-post-area .suggested-posts .single-post .postTitle {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.suggested-post-area .suggested-posts .single-post .postTitle:hover {
+  color: #04aa6d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .suggested-post-area .suggested-posts {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .suggested-post-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .suggested-post-area .suggested-posts .single-post .featureImage {
+    height: 100px;
+  }
+}
